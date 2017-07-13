@@ -46,24 +46,6 @@ export default class OSM extends Observer {
     return this._root;
   }
 
-  height(value = null) {
-    if (value === null) {
-      return this._root.style('height');
-    }
-
-    this._root.style('height', value);
-    return this;
-  }
-
-  width(value = null) {
-    if (value === null) {
-      return this._root.style('width');
-    }
-
-    this._root.style('width', value);
-    return this;
-  }
-
   inset(width = '48em') {
     if (width === null) {
       return this._inset;
